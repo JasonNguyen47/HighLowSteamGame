@@ -14,7 +14,7 @@ const steamGames = filteredSteamGames as SteamGame[];
 
 export async function GET(request: Request) {
   let newNum: number;
-  let currentAppID = new URL(request.url).searchParams.get("currentAppID");
+  const currentAppID = new URL(request.url).searchParams.get("currentAppID");
 
   do {
     newNum = Math.floor(Math.random() * steamGames.length + 1);
