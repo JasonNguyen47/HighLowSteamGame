@@ -1,5 +1,7 @@
 "use client";
 
+import { useRef } from 'react';
+
 type SteamGame = {
   id: string;
   name: string;
@@ -34,7 +36,18 @@ export default function GameMenu({
   bestScore,
   setBestScore,
 }: GameMenuProps) {
+
+
+   const loadingGame = useRef(false)
+
+
+
   async function onClickPlayAgain() {
+
+    if (loadingGame.current) {return;}
+
+    loadingGame.current = true;
+    
     if (score > bestScore) {
       setBestScore(score);
     }
@@ -49,7 +62,12 @@ export default function GameMenu({
 
     setMenuShow(!menuShow);
     setScore(0);
+
+    loadingGame.current = false;
   }
+
+ 
+
 
   if (menuShow) {
     return (

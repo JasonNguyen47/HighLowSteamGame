@@ -1,6 +1,7 @@
 "use client";
 
 import { FastAverageColor } from "fast-average-color";
+import { useRef } from 'react';
 
 type SteamGame = {
   id: string;
@@ -55,6 +56,8 @@ export default function Panels({
       setMenuShow(true);
     }
   }
+
+
 
   return (
     <div>

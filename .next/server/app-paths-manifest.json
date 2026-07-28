@@ -1,0 +1,5 @@
+{
+  "/HighLow/page": "app/HighLow/page.js",
+  "/api/player/route": "app/api/player/route.js",
+  "/page": "app/page.js"
+}

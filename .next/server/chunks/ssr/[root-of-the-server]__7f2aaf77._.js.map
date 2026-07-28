@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 3, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 15, "column": 0}, "map": {"version":3,"sources":["file:///workspaces/HighLowSteamGame/app/page.tsx"],"sourcesContent":["import Image from \"next/image\";\n\nexport default function Home() {\n  return (\n    <div className={\"homePage\"}>\n      <a href=\"/HighLow\">Play the Game</a>\n    </div>\n  );\n}\n"],"names":[],"mappings":";;;;;;AAEe,SAAS;IACtB,qBACE,mVAAC;QAAI,WAAW;kBACd,cAAA,mVAAC;YAAE,MAAK;sBAAW;;;;;;;;;;;AAGzB","debugId":null}}]
+}
