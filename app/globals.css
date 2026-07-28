@@ -18,6 +18,7 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
 }
 
 .HighLowBackground {
@@ -55,7 +56,7 @@ body {
 
 .scoreCounter {
   position: fixed;
-  color: blue;
+  color: White;
   z-index: 1;
   bottom: 0;
   right: 0;
@@ -88,10 +89,13 @@ body {
 
 .answerButton {
   border: 1px solid;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .steamImage {
-  width: 100px;
+  width: 300px;
   height: auto;
 }
 

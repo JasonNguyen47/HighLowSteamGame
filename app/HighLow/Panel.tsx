@@ -40,6 +40,9 @@ export default function Panels({
   callApi,
 }: PanelsProps) {
   async function answerCheck(answer: string) {
+
+    if (menuShow) {return;}
+
     const correct =
       answer === "Higher"
         ? currentGame.playerCount < newGame.playerCount
